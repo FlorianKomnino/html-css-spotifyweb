@@ -69,7 +69,7 @@ aside li {
     display: inline-block;
     text-transform: uppercase;
     font-size: 0.75rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     font-weight: 600;
     color: #7c7e83;
 }
