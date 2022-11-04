@@ -31,6 +31,10 @@ li {
     color: white;
 }
 
+.subtitle {
+    color: #7a7c81;
+}
+
 /* ************* header selectors ************* */
 
 header {
@@ -85,6 +89,10 @@ aside li {
 
 /* central part */
 
+div.wrapper {
+    overflow-y: scroll;
+}
+
 .recently-played .two-cards {
     width: calc((100% / 3) - 3rem);
 }
@@ -95,9 +103,7 @@ aside li {
     height: 100%;
     text-align: center;
 }
-.recently-played>h1:first-child {
-    margin: 0 0 2rem 2rem;
-}
+
 .recently-played figure {
     height: 65%;
     width: 100%;
@@ -106,7 +112,6 @@ aside li {
 .card > * {
     width: 100%;
 }
-
 
 .recently-played img {
     width: 100%;
@@ -117,6 +122,18 @@ aside li {
 div.distancer {
     width: 2vw;
     height: 100%;
+}
+
+.recently-played>h1:first-child {
+    margin: 0 0 2rem 2rem;
+}
+
+.creato-per-john-doe .card {
+    width: calc((100% / 3) / 2 - 3rem);
+}
+
+.creato-per-john-doe .two-cards {
+    height: 280px;
 }
 
 /* ************* footer selectors ************* */
