@@ -19,12 +19,20 @@ li {
     justify-content: center;
 }
 
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
 .flex-align-center {
     align-items: center;
 }
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .white-text {
@@ -98,7 +106,6 @@ div.wrapper {
 }
 
 .card {
-    min-width: 135px;
     text-align: center;
     width: calc((100% / 6) - 2rem);
 }
@@ -107,9 +114,6 @@ div.wrapper {
     width: 100%;
 }
 
-.card > * {
-    width: 100%;
-}
 
 .recently-played img {
     width: 100%;
@@ -127,13 +131,13 @@ div.distancer {
 }
 
 .creato-per-john-doe .card {
-    width: calc((100% / 3) / 2 - 3rem);
+    width: calc((100% / 6) - 2rem);
 }
 
-.creato-per-john-doe .suggested-image {
+.creato-per-john-doe img {
     width: 100%;
-    aspect-ratio: 1 / 1;
 }
+
 
 /* ************* footer selectors ************* */
 
