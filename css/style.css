@@ -3,3 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* ************* general selectors ************* */
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ************* header selectors ************* */
+
+header {
+    width: 230px;
+    height: calc(100vh - 100px);
+    background-color: greenyellow;
+}
+
+/* ************* main selectors ************* */
+
+main {
+    height: calc(100vh - 100px);
+    width: calc(100vh - 230px);
+    flex-grow: 1;
+    background-color: purple;
+}
+
+/* ************* footer selectors ************* */
+
+footer {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+}
