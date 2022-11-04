@@ -23,6 +23,10 @@ li {
     justify-content: space-evenly;
 }
 
+.flex-space-between {
+    justify-content: space-between;
+}
+
 .flex-align-center {
     align-items: center;
 }
@@ -47,14 +51,12 @@ li {
 
 header {
     width: 230px;
-    height: calc(100vh - 80px);
     background-color: #000000;
 }
 
 /* ************* main selectors ************* */
 
 main {
-    height: calc(100vh - 80px);
     width: calc(100vh - 230px);
     flex-grow: 1;
     background-color: #141922;
@@ -71,6 +73,11 @@ button {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+}
+
+div.wrapper {
+    overflow-y: scroll;
+    padding-bottom: 80px;
 }
 
 /* top part */
@@ -97,10 +104,8 @@ aside li {
 
 /* central part */
 
-div.wrapper {
-    overflow-y: scroll;
-}
 
+/* recently played selectors */
 .recently-played {
     padding-bottom: 2rem;
 }
@@ -108,12 +113,12 @@ div.wrapper {
 .card {
     text-align: center;
     width: calc((100% / 6) - 2rem);
+    margin: 1rem;
 }
 
 .recently-played figure {
     width: 100%;
 }
-
 
 .recently-played img {
     width: 100%;
@@ -121,23 +126,29 @@ div.wrapper {
     margin-bottom: 0.5rem;
 }
 
-div.distancer {
-    width: 2vw;
-    height: 100%;
-}
-
 .recently-played>h1:first-child {
-    margin: 0 0 2rem 2rem;
+    margin: 0 0 0.5rem 1rem;
 }
 
+/* created for user selectors */
 .creato-per-john-doe .card {
-    width: calc((100% / 6) - 2rem);
+    width: calc((100% / 2) - 2rem);
+    margin-bottom: 2rem;
+}
+
+.creato-per-john-doe .container {
+    width: calc(100% / 3 );
 }
 
 .creato-per-john-doe img {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
+.creato-per-john-doe>p:nth-child(2),
+.creato-per-john-doe>h1:first-child {
+    margin: 0 0 0.5rem 1rem;
+}
 
 /* ************* footer selectors ************* */
 
