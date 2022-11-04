@@ -61,6 +61,8 @@ button {
     transform: translateY(-50%);
 }
 
+/* top part */
+
 aside {
     height: 70px; 
 }
@@ -79,6 +81,42 @@ aside li {
     width: 100%;
     background-color: #080b12;
     position: relative;
+}
+
+/* central part */
+
+.recently-played .two-cards {
+    width: calc((100% / 3) - 3rem);
+}
+
+.card {
+    min-width: 135px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.recently-played>h1:first-child {
+    margin: 0 0 2rem 2rem;
+}
+.recently-played figure {
+    height: 65%;
+    width: 100%;
+}
+
+.card > * {
+    width: 100%;
+}
+
+
+.recently-played img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 4rem;
+}
+
+div.distancer {
+    width: 2vw;
+    height: 100%;
 }
 
 /* ************* footer selectors ************* */
