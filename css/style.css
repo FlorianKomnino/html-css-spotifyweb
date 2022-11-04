@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* ************* general selectors ************* */
@@ -14,8 +15,20 @@ li {
     display: flex;
 }
 
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.white-text {
+    color: white;
 }
 
 /* ************* header selectors ************* */
@@ -41,12 +54,24 @@ button {
     border: 2px solid white;
     border-radius: 15px;
     background-color: #080b12;
-    color: white;
     font-size: 0.5rem;
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+}
+
+aside {
+    height: 70px; 
+}
+
+aside li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    color: #7c7e83;
 }
 
 #upgrade {
