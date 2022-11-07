@@ -58,8 +58,12 @@ li {
 /* ************* header selectors ************* */
 
 header {
-    width: 230px;
+    width: 150px;
     background-color: #000000;
+}
+
+#logo-header {
+    padding: 0 3rem 1rem 1rem;
 }
 
 /* ************* main selectors ************* */
@@ -160,14 +164,19 @@ aside li {
 }
 
 .artisti-popolari figure {
+    padding-top: 100%;
     border-radius: 50%;
     overflow: hidden;
-
+    position:relative;
 }
 
 .artisti-popolari img {
+    border-radius: 50%;
     width: 100%;
     margin-bottom: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* ************* footer selectors ************* */
