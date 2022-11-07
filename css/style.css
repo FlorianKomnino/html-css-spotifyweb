@@ -232,3 +232,36 @@ footer {
     bottom: 0;
     background-color: #282828;
 }
+
+/* playing element selectors */
+
+.playing-element {
+    width: 150px;
+    height: 80px;
+}
+
+.playing-element figure {
+    width: 30%;
+}
+
+.playing-element figure img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.playing-element>p {
+    width: 12.5%;
+    font-size: 0.8rem;
+}
+
+.track-infos {
+    width: 45%
+}
+
+.track-infos p:first-child {
+    font-size: 0.8rem;
+}
+
+.track-infos p:nth-child(2) {
+    font-size: 0.6rem;
+}
