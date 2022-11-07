@@ -59,7 +59,9 @@ li {
 
 header {
     width: 150px;
+    height: calc(100vh - 80px);
     background-color: #000000;
+    position: fixed;
 }
 
 header img {
@@ -90,12 +92,30 @@ header h2 {
     padding: 0 3rem 1rem 1rem;
 }
 
+/* bottom header selectors */
+
+.bottom-header {
+    padding: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.bottom-header * {
+    text-decoration: none;
+}
+
+.bottom-header hr {
+    margin: 0.75rem 0;
+}
+
 /* ************* main selectors ************* */
 
 main {
-    width: calc(100vh - 230px);
+    width: 100vh;
     flex-grow: 1;
     background-color: #141922;
+    padding-left: 150px;
     overflow-y: auto;
 }
 
