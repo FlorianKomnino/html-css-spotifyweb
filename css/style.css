@@ -260,16 +260,18 @@ footer {
 }
 
 .playing-element figure {
+    text-align: center;
     width: 30%;
 }
 
 .playing-element figure img {
-    width: 100%;
+    width: 70%;
+    min-width: 35px;
     padding: 0.5rem;
 }
 
 .playing-element>p {
-    width: 12.5%;
+    width: 25%;
     font-size: 0.8rem;
 }
 
@@ -340,6 +342,7 @@ footer {
 .time-passed {
     width: 10%;
     text-align: center;
+    font-size: 0.75rem;
 }
 
 /* right command bar selectors */
@@ -521,6 +524,15 @@ footer {
         width: 100%;
         flex-wrap: wrap;
         justify-content: left;
+    }
+
+    /* changing fon size of track-infos */
+    .track-infos p:first-child {
+        font-size: 0.6rem;
+    }
+
+    .track-infos p:nth-child(2) {
+        font-size: 0.4rem;
     }
 
 }
