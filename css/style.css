@@ -262,8 +262,6 @@ aside li {
 footer {
     height: 80px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
     background-color: #282828;
 }
 
