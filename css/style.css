@@ -58,7 +58,7 @@ li {
 /* ************* header selectors ************* */
 
 header {
-    width: 150px;
+    width: 200px;
     height: calc(100vh - 80px);
     background-color: #000000;
     position: fixed;
@@ -70,7 +70,7 @@ header img {
 
 header li {
     margin: 0.75rem 1rem;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 header h2 {
@@ -111,7 +111,7 @@ header h2 {
 }
 
 .bottom-header a {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .bottom-header .fa-circle-user {
@@ -125,7 +125,7 @@ main {
     width: 100vh;
     flex-grow: 1;
     background-color: #141922;
-    padding-left: 150px;
+    padding-left: 200px;
     overflow-y: auto;
 }
 
@@ -247,6 +247,7 @@ footer {
 
 .playing-element {
     height: 80px;
+    width: 200px;
 }
 
 .playing-element figure {
@@ -374,11 +375,90 @@ footer {
 
 @media screen and (max-width: 992px) {
 
-    main {
-        padding-left: 150px;
+    /* changing size of albums space */
+    .card {
+        width: calc((100% / 4) - 2rem);
+    }
+    
+    .recently-played .container {
+    flex-wrap: wrap;
+    justify-content: left;
     }
 
-    header {
-        width: 150px;
+    .creato-per-john-doe .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+
+    .artisti-popolari .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+    
+    .scrollbar {
+        width: 70%;
+        height: 20px;
+        position: relative;
+        flex-shrink: 3;
     }
+
+    .right-command-bar ul {
+        display: flex;
+    }
+
+    .right-command-bar ul li {
+        display: flex;
+    }
+
+    .right-command-bar li i {
+        font-size: 100%;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .card {
+        width: calc((100% / 2) - 2rem);
+    }
+    
+    .recently-played .container {
+    flex-wrap: wrap;
+    justify-content: left;
+    }
+
+    .creato-per-john-doe .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+
+    .artisti-popolari .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        width: calc((100% / 4) - 2rem);
+    }
+    
+    .recently-played .container {
+    flex-wrap: wrap;
+    justify-content: left;
+    }
+
+    .creato-per-john-doe .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        }
+
+    .artisti-popolari .container {
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+        justify-content: left;
+        } */
 }
