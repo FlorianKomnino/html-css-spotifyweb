@@ -54,6 +54,14 @@ li {
 .section-subtitle {
     margin: 0 0 0.5rem 1rem;
 }
+.card figure p {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
 
 /* ************* header selectors ************* */
 
@@ -193,6 +201,7 @@ aside li {
 
 .recently-played figure {
     width: 100%;
+    position: relative;
 }
 
 .recently-played img {
@@ -209,6 +218,10 @@ aside li {
 
 .creato-per-john-doe .container {
     width: calc(100% / 3 );
+}
+
+.creato-per-john-doe figure {
+    position: relative;
 }
 
 .creato-per-john-doe img {
@@ -230,7 +243,7 @@ aside li {
     padding-top: 100%;
     border-radius: 50%;
     overflow: hidden;
-    position:relative;
+    position: relative;
 }
 
 .artisti-popolari img {
@@ -382,6 +395,43 @@ footer {
     height: 20px;
     position: relative;
 }
+
+
+/* ************* pseudo selectors ************* */
+
+button:hover {
+    scale: 1.25;
+    transform: translate(-2rem, -1rem);
+}
+
+.card figure:hover p {
+    display: block;
+}
+
+.card figure:hover img{
+    opacity: 0.5;
+}
+
+footer .fa-circle-play:hover {
+    scale: 1.25
+}
+
+.volume-bar:hover,
+.time-bar:hover {
+    background-color: #88b343;
+    height: 7px;
+    transform: translate(0, -1px);
+}
+
+.playing-element i:hover,
+.track-infos p:hover,
+.bottom-header a:hover,
+aside li:hover,
+header li:hover {
+    color: white;
+}
+
+
 
 /* !!!!!!!!!!! Media Query !!!!!!!!!!! */
 
