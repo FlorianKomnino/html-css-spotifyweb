@@ -263,6 +263,7 @@ footer {
     height: 80px;
     width: 100%;
     background-color: #282828;
+    position: fixed;
 }
 
 /* playing element selectors */
