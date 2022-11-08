@@ -63,15 +63,19 @@ li {
     font-size: 3rem;
 }
 
+div.wrapper {
+    height: calc(100vh - 80px);
+}
+
 /* ************* header selectors ************* */
 
 header {
     width: 200px;
-    height: calc(100vh - 80px);
+    height: 100%;
     background-color: #000000;
-    position: fixed;
 }
 
+/* top header selectors */
 header img {
     margin-top: 1rem;
 }
@@ -103,13 +107,13 @@ header h2 {
 #logo-header-small {
     display: none;
 }
+
 /* bottom header selectors */
 
 .bottom-header {
     width: 100%;
     padding: 1rem;
-    position: absolute;
-    bottom: 1rem;
+    justify-self: flex-end;
 }
 
 .bottom-header * {
@@ -133,10 +137,9 @@ header h2 {
 /* ************* main selectors ************* */
 
 main {
-    width: 100vh;
+    width: calc(100% - 200px);
     flex-grow: 1;
     background-color: #141922;
-    padding-left: 200px;
     overflow-y: auto;
 }
 
@@ -153,14 +156,11 @@ button {
     transform: translateY(-50%);
 }
 
-div.wrapper {
-    padding-bottom: 80px;
-}
-
 /* top part */
 
 aside {
     height: 70px; 
+    margin-top: 80px;
 }
 
 aside li {
@@ -175,9 +175,12 @@ aside li {
 
 #upgrade {
     height: 80px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: #080b12;
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 /* central part */
@@ -207,7 +210,6 @@ aside li {
 .recently-played img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 0.5rem;
 }
 
 /* created for user selectors */
@@ -516,6 +518,10 @@ header li:hover {
         width: 40px;
     }
 
+    #upgrade {
+        width: calc(100% - 40px);
+    }
+
     main {
         padding-left: 40px;
     }
@@ -531,6 +537,7 @@ header li:hover {
     #logo-header {
         display:none;
     }
+
     /* small logo appearing and dimensioning */
     #logo-header-small {
         display: block;

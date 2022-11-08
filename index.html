@@ -21,30 +21,32 @@
     <div class="wrapper flex">
 
         <!-- menu on left side of the screen -->
-        <header>
-            <img src="./img/logo.svg" alt="logo" id="logo-header">
-            <img src="./img/logo-small.svg" alt="logo" id="logo-header-small">
-
-            <ul>
-                <li class="subtitle"><i class="fa-solid fa-house"></i>  <span>Home</span></li>
-                <li class="subtitle"><i class="fa-solid fa-magnifying-glass"></i>  <span>Cerca</span></li>
-                <li class="subtitle"><i class="fa-solid fa-lines-leaning"></i>  <span>La tua libreria</span></li>
-            </ul>
-
-            <h2 class="white-text">
-                Playlist
-            </h2>
-
-            <ul class="playlists">
-                <li class="subtitle"><i class="fa-solid fa-plus"></i>  Crea Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-                <li class="subtitle">Nuova Playlist</li>
-            </ul>
+        <header class="flex flex-column flex-space-between">
+            <div class="top-header">
+                <img src="./img/logo.svg" alt="logo" id="logo-header">
+                <img src="./img/logo-small.svg" alt="logo" id="logo-header-small">
+                
+                <ul>
+                    <li class="subtitle"><i class="fa-solid fa-house"></i>  <span>Home</span></li>
+                    <li class="subtitle"><i class="fa-solid fa-magnifying-glass"></i>  <span>Cerca</span></li>
+                    <li class="subtitle"><i class="fa-solid fa-lines-leaning"></i>  <span>La tua libreria</span></li>
+                </ul>
+                
+                <h2 class="white-text">
+                    Playlist
+                </h2>
+                
+                <ul class="playlists">
+                    <li class="subtitle"><i class="fa-solid fa-plus"></i>  Crea Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                    <li class="subtitle">Nuova Playlist</li>
+                </ul>
+            </div>
             
             <div class="bottom-header flex flex-column">
                 <a href="#" class="subtitle">
@@ -275,8 +277,8 @@
                     0:25
                 </p>
                 <div class="scrollbar">
-                    <hr class="bg-bar">
-                    <hr class="time-bar">
+                    <div class="bg-bar"></div>
+                    <div class="time-bar"></div>
                 </div>
 
                 <p class="time-remaining white-text">
@@ -292,8 +294,8 @@
                 <li><i class="fa-solid fa-volume-high white-text"></i></li>
             </ul>
             <div class="volume">
-                <hr class="volume-bg-bar">
-                <hr class="volume-bar">
+                <div class="volume-bg-bar"></div>
+                <div class="volume-bar"></div>
             </div>
         </div>
     </footer>
