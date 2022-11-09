@@ -164,7 +164,7 @@ button {
     font-size: 0.5rem;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 5rem;
     transform: translateY(-50%);
 }
 
@@ -422,7 +422,6 @@ footer {
 
 button:hover {
     scale: 1.25;
-    transform: translate(-2rem, -1rem);
 }
 
 .card figure:hover p {
